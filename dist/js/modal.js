@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     xhr.onload = function() {
         if (xhr.status === 200) {
             // Get the modal content from WordPress options page
-            var innerContent = JSON.parse(xhr.responseText);
+            var modalData = JSON.parse(xhr.responseText);
 
             // Build the modal HTML structure
             var htmlContent = '';
@@ -13,14 +13,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
             htmlContent += '<div class="modal__overlay" tabindex="-1" data-micromodal-close="data-micromodal-close">';
             htmlContent += '<div class="modal__container" role="dialog" aria-labelledby="modal-1-title">';
             htmlContent += '<header class="modal__header">';
-            htmlContent += '<h2 class="modal__title" id="modal-1-title">COVID-19 Update</h2>';
+            htmlContent += '<h2 class="modal__title" id="modal-1-title">' + modalData['modal_title'] + '</h2>';
             htmlContent += '<button class="modal__close" aria-label="Close modal" data-micromodal-close="data-micromodal-close"></button>';
             htmlContent += '</header>';
-            htmlContent += '<main class="modal__content" id="modal-1-content">';
-            htmlContent += innerContent; // inner content
-            htmlContent += '</main>';
+            htmlContent += '<main class="modal__content" id="modal-1-content">' + modalData['modal_content'] + '</main>';
             htmlContent += '<footer class="modal__footer">';
-            htmlContent += '<a class="modal__btn modal__btn-primary" href="/covid-19-operations-plan/">Read More on COVID-19</a>';
+            htmlContent += '<a class="modal__btn modal__btn-primary" href="' + modalData['cta_link_url'] + '">' + modalData['cta_link_text'] + '</a>';
             htmlContent += '<button id="js-dismiss-alert" class="modal__btn" aria-label="Dismiss this alert for 5 days" data-micromodal-close="data-micromodal-close">Dismiss Alert For 5 Days</button>';
             htmlContent += '</footer>';
             htmlContent += '</div>';
