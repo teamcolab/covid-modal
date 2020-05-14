@@ -12,40 +12,26 @@ This plugin provides an easy to install and configure modal functionality. It is
 
 == Description ==
 
-This is the long description.  No limit, and you can use Markdown (as well as in the following sections).
+This plugin provides an easy to install and configure modal functionality. It is intended to give site maintainers a quick way to convey critical information during the current pandemic.
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
+The plugin provides:
 
-A few notes about the sections above:
-
-*   "Contributors" is a comma separated list of wordpress.org usernames
-*   "Tags" is a comma separated list of tags that apply to the plugin
-*   "Requires at least" is the lowest version that the plugin will work on
-*   "Tested up to" is the highest version that you've *successfully used to test the plugin*. Note that it might work on
-higher versions... this is just the highest one you've verified.
-*   Stable tag should indicate the Subversion "tag" of the latest stable version, or "trunk," if you use `/trunk/` for
-stable.
-
-    Note that the `readme.txt` of the stable tag is the one that is considered the defining one for the plugin, so
-if the `/trunk/readme.txt` file says that the stable tag is `4.3`, then it is `/tags/4.3/readme.txt` that'll be used
-for displaying information about the plugin.  In this situation, the only thing considered from the trunk `readme.txt`
-is the stable tag pointer.  Thus, if you develop in trunk, you can update the trunk `readme.txt` to reflect changes in
-your in-development version, without having that information incorrectly disclosed about the current stable version
-that lacks those changes -- as long as the trunk's `readme.txt` points to the correct stable tag.
-
-    If no stable tag is provided, it is assumed that trunk is stable, but you should specify "trunk" if that's where
-you put the stable version, in order to eliminate any doubt.
+ - A single modal with a settings page for customizing the title, body content, and call to action link url and text of the modal.
+ - Modal is dismissable and sets a javascript cookie to remember the user's action for future visits. 
+ - CSS and Javascript is enqueued using WordPress's hooks.
+ - Modal content is fed to the pure JS modal implementation via WordPress REST calls.
 
 == Frequently Asked Questions ==
 
 = How do I configure the modal content? =
 
-Within the WordPress admin site, go to: Settings > 
+Within the WordPress admin site, go to: `Settings > Covid Modal Options` to fill out and submit the settings page.
 
-= What about foo bar? =
+= I installed and configured my modal but it looks bad with my theme, what can I do to fix it? =
 
-Answer to foo bar dilemma.
+We tried hard to scope our styles and class structure in such a way as to not conflict with custom themes however we cannot 100% avoid style collisions. If the site styles and the modal styles conflict, you may need to add additional styles or override provided styles to customize to your specific WordPress site.
+
+We suggest that you do this in your theme.
 
 == Screenshots ==
 
