@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Colab Covid Modal
+Plugin Name: Covid Modal
 Plugin URI: https://www.teamcolab.com
 Description: Colab Covid Modal
 Version: 1.0

@@ -25,6 +25,9 @@ class Settings {
 
         add_option('cta_link_text', $default_cta_link_text);
         register_setting('covid_modal', 'cta_link_text');
+
+        add_option('modal_enabled', 0);
+        register_setting('covid_modal', 'modal_enabled');
     }
 
     public static function admin_menu() {
