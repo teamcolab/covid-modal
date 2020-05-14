@@ -1,7 +1,7 @@
 === Covid-19 Modal ===
 Contributors: (this should be a list of wordpress.org userid's)
 Tags: covid-19, coronavirus, modal, alert, banner, extensible
-Requires at least: 4.7
+Requires at least: 5.0
 Tested up to: 5.4
 Stable tag: 1.0.0
 Requires PHP: 5 >= 5.3.0, PHP 7
@@ -31,8 +31,6 @@ Within the WordPress admin site, go to: `Settings > Covid Modal Options` to fill
 
 We tried hard to scope our styles and class structure in such a way as to not conflict with custom themes however we cannot 100% avoid style collisions. If the site styles and the modal styles conflict, you may need to add additional styles or override provided styles to customize to your specific WordPress site.
 
-We suggest that you do this in your theme.
-
 == Screenshots ==
 
 1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is stored in the /assets directory.
@@ -41,41 +39,10 @@ We suggest that you do this in your theme.
 == Changelog ==
 
 = 1.0 =
-* A change since the previous version.
-* Another change.
-
-= 0.5 =
-* List versions from most recent at top to oldest at bottom.
+* Initial Version
 
 == Upgrade Notice ==
 
 = 1.0 =
-Upgrade notices describe the reason a user should upgrade.  No more than 300 characters.
+Initial Version
 
-= 0.5 =
-This version fixes a security related bug.  Upgrade immediately.
-
-== A brief Markdown Example ==
-
-Ordered list:
-
-1. Some feature
-1. Another feature
-1. Something else about the plugin
-
-Unordered list:
-
-* something
-* something else
-* third thing
-
-Here's a link to [WordPress](https://wordpress.org/ "Your favorite software") and one to [Markdown's Syntax Documentation][markdown syntax].
-Titles are optional, naturally.
-
-[markdown syntax]: https://daringfireball.net/projects/markdown/syntax
-            "Markdown is what the parser uses to process much of the readme file"
-
-Markdown uses email style notation for blockquotes and I've been told:
-> Asterisks for *emphasis*. Double it up  for **strong**.
-
-`<?php code(); // goes in backticks ?>`
