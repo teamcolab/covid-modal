@@ -65,6 +65,14 @@ function covid_modal_stylesheet_override($stylesheets) {
 add_filter('covid_modal_stylesheet', 'covid_modal_stylesheet_override');
 ```
 
+== Installation ==
+
+1. enable the plugin
+2. go to the plugin's settings page
+3. update your modal's content making sure to check the box to enable the modal
+4. submit the settings page
+5. Success!
+
 == Frequently Asked Questions ==
 
 = Who is this for? =
