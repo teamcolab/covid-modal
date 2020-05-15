@@ -1,5 +1,5 @@
 === Covid-19 Modal ===
-Contributors: teamcolab
+Contributors: teamcolabva
 Tags: covid-19, coronavirus, modal, alert, banner, extensible
 Requires at least: 5.0
 Tested up to: 5.4
