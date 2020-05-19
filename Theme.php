@@ -17,13 +17,10 @@ class Theme {
                 wp_enqueue_style('style-emergency-alert-modal-' . $key, $covid_modal_stylesheet, false, '1.0', 'all');
             }
 
-            wp_register_script('microModal', 'https://unpkg.com/micromodal/dist/micromodal.min.js', null, null, true);
-            wp_enqueue_script('microModal');
 
-            wp_register_script('jsCookie', 'https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js', null, null, true);
-            wp_enqueue_script('jsCookie');
-
-            wp_enqueue_script('covid_modal', $dist_uri . '/js/modal.js', ['microModal', 'jsCookie'], 1.1, true);
+            wp_enqueue_script('microModal', $dist_uri . '/js/micromodal.min.js', null, '0.4.6', true);
+            wp_enqueue_script('jsCookie', $dist_uri . '/js/js.cookie.min.js', null, 'v3.0.0-rc.0', true);
+            wp_enqueue_script('covid_modal', $dist_uri . '/js/modal.js', ['microModal', 'jsCookie'], '1.1', true);
         }
     }
 

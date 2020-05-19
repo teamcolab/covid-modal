@@ -1,16 +1,16 @@
 <?php
 /*
 Plugin Name: Covid Modal
-Plugin URI: https://www.teamcolab.com
-Description: Colab Covid Modal
+Plugin URI: https://github.com/teamcolab/covid-modal
+Description: Covid-19 Modal
 Version: 1.0
-Author: Francis Yaconiello
+Author: Colab Multimedia, LLC
 Author URI: https://www.teamcolab.com
 License: GPL2
 */
 
 /*
-Copyright 2020  Colab Multimedia, LLC  (email : support@teamcolab.com)
+Copyright 2020  Colab Multimedia, LLC  (email : wordpress@teamcolab.com)
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License, version 2, as
 published by the Free Software Foundation.

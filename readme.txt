@@ -1,5 +1,5 @@
 === Covid-19 Modal ===
-Contributors: teamcolab
+Contributors: teamcolabva
 Tags: covid-19, coronavirus, modal, alert, banner, extensible
 Requires at least: 5.0
 Tested up to: 5.4
@@ -64,14 +64,6 @@ function covid_modal_stylesheet_override($stylesheets) {
 }
 add_filter('covid_modal_stylesheet', 'covid_modal_stylesheet_override');
 ```
-
-== Installation ==
-
-1. enable the plugin
-2. go to the plugin's settings page
-3. update your modal's content making sure to check the box to enable the modal
-4. submit the settings page
-5. Success!
 
 == Frequently Asked Questions ==
 
